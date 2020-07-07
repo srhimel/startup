@@ -40,6 +40,9 @@ body {
         //     margin-top: 14px;
         // }
     }
+    .startup-single{
+        margin-bottom: 20px;
+    }
 
     .section-round__vs {
         position: relative;
@@ -74,8 +77,12 @@ body {
             margin-top: 20px;
         }
 
-        vertical-align: middle;
-
+        &-list{
+            height: 100%;
+            position: relative;
+            padding: 20px;
+            padding-bottom: 15px; 
+        }
         &-1 {
             height: 100%;
             position: relative;
@@ -86,6 +93,40 @@ body {
                 background: #F9F9F9;
             }
 
+        }
+        .additional{
+            .gallery{
+                .img-fluid{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+            padding: 0 20px 20px 20px;
+            hr{
+                background: #969696;
+            }
+            .description{
+                font-size: 13px;
+            }
+            .social-share{
+                p{
+                    margin-bottom: 5px;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .icon{
+                    text-decoration: none;
+                    margin-left: 5px;
+
+                    svg{
+                        max-width: 30px;
+
+                    }
+                }
+            }
         }
 
         &-1:not(:last-child) {
@@ -105,7 +146,7 @@ body {
         &-text {
             width: 82%;
             padding-left: 1rem;
-            padding-right: 5rem;
+            padding-right: 2rem;
 
             h4 {
                 font-size: 20px;
@@ -179,6 +220,8 @@ body {
     &-title {
         font-size: 16px;
         font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
     }
 
     &-body {
@@ -187,7 +230,6 @@ body {
         border-radius: 5px;
         -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
-        margin-top: 5px;
 
         .subscribe {
 
@@ -359,5 +401,18 @@ body {
 
     .copyright p {
         border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+
+
+.preview{
+    p{
+        color: #6f6f6f;
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .section-round__perticipent-1{
+        padding-bottom: 20px;
     }
 }
