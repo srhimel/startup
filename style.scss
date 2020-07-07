@@ -416,3 +416,12 @@ body {
         padding-bottom: 20px;
     }
 }
+
+@media (max-width: 769px){
+    .section-round__perticipent{
+        &-text{
+            padding-right: 2.5rem !important;
+        }
+        
+    }
+}

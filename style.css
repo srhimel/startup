@@ -10692,4 +10692,10 @@ body {
 .preview .section-round__perticipent-1 {
   padding-bottom: 20px;
 }
+
+@media (max-width: 769px) {
+  .section-round__perticipent-text {
+    padding-right: 2.5rem !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
