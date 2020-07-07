@@ -10325,8 +10325,8 @@ body {
 .main .section-round__vs-text {
   position: absolute;
   background: #fff;
-  width: 33px;
-  height: 33px;
+  width: 43px;
+  height: 43px;
   color: #F14C00;
   display: block;
   z-index: 9999;
@@ -10336,9 +10336,10 @@ body {
   top: 50%;
   right: 50%;
   -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   font-size: 20px;
   font-weight: 600;
+  padding: 6px;
 }
 
 .main .section-round__perticipent {
@@ -10696,6 +10697,28 @@ body {
 @media (max-width: 769px) {
   .section-round__perticipent-text {
     padding-right: 2.5rem !important;
+  }
+  .main .section-round__vs {
+    position: relative;
+  }
+  .main .section-round__vs-text {
+    position: absolute;
+    background: #fff;
+    width: 37px;
+    height: 37px;
+    color: #F14C00;
+    display: block;
+    z-index: 9999;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px;
   }
 }
 /*# sourceMappingURL=style.css.map */
