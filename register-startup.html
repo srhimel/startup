@@ -16,23 +16,21 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-            <div class="container">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
+            <div class="container position-relative">
+    
+                <button class="navbar-toggler align-self-start" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-self-stretch">
                         <li class="nav-item">
                             <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-
+    
                         <li class="nav-item">
                             <a class="nav-link" href="#">Archive</a>
                         </li>
@@ -40,11 +38,11 @@
                             <a class="nav-link" href="#">Grand Archive</a>
                         </li>
                     </ul>
-
+    
                 </div>
                 <a style="width: 160px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
-
-
+    
+    
             </div>
         </nav>
     </header>
@@ -53,8 +51,82 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    
-                    
+                    <div class="form-info">Submit your Startup
+                        for the next Tournament</div>
+                    <div class="register-form">
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Startup Name</label><span class="required"> - Required</span>
+                                <div class="input-counter">
+                                    <input maxlength="30" onkeyup="countChar(this)" type="text" class="form-control" id="name" 
+                                        required placeholder="Name of your Startup">
+                                    <div class="input-counter__text"><small><span id="charNum">0</span>/30</small></div>
+                                </div>
+                                <!-- Error Feedback -->
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="elevetor" class="form-label">Elevator Pitch</label><span class="required"> - Required</span>
+                                <div class="input-counter">
+                                    <textarea maxlength="150" rows="4" onkeyup="countCharT(this)"  class="form-control" id="elevetor" 
+                                        required placeholder="Short description of your startup idea, company or concept" ></textarea>
+                                    <div class="input-counter__text"><small><span id="charNumT">0</span>/150</small></div>
+                                </div>
+                                <!-- Error Feedback -->
+                                <div class="invalid-feedback">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="weburl" class="form-label">Website Link</label> <span class="required"> - Required</span>
+                                <input type="url" class="form-control is-invalid" id="weburl" placeholder="Enter your website Link"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Your website link is invalid
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="image" class="form-label">Thumbnail</label> <span class="required"> - Required</span>
+                                <div class="image-upload">
+
+                                    <div class="image-box">
+                                        <div class="row">
+                                            <div class="col-2 image">
+                                                <svg width="50" height="38" viewBox="0 0 50 38" xmlns="http://www.w3.org/2000/svg" class="icon_e4eef clickable_1ca0f"><g fill="none" fill-rule="evenodd"><path d="M33.25 4.75H1.583C.71 4.75 0 5.459 0 6.333v25.334c0 .874.709 1.583 1.583 1.583H33.25c.874 0 1.583-.709 1.583-1.583V6.333c0-.874-.709-1.583-1.583-1.583z" fill="#D4D4D4"></path><g transform="rotate(7 -35.51 56.656)"><path d="M33.25 0H1.583C.71 0 0 .709 0 1.583v25.334C0 27.79.709 28.5 1.583 28.5H33.25c.874 0 1.583-.709 1.583-1.583V1.583C34.833.71 34.124 0 33.25 0z" fill="#E6E6E6"></path><path d="M31.667 26.125h-28.5a.792.792 0 0 1-.792-.792V3.167c0-.438.354-.792.792-.792h28.5c.437 0 .791.354.791.792v22.166a.792.792 0 0 1-.791.792z" fill="#FFF"></path><circle fill="#E6E6E6" cx="15.042" cy="8.708" r="2.375"></circle><path d="M19.334 22.167l-6.9-6.893a.792.792 0 0 0-1.16.044l-4.75 5.54a.792.792 0 0 0 .601 1.309h12.21z" fill="#C9C6C6"></path><path d="M28.349 20.91l-6.334-8.71a.792.792 0 0 0-1.266-.02l-7.772 9.986h14.731a.792.792 0 0 0 .64-1.258z" fill="#E6E6E6"></path></g><path d="M41.958 0a7.917 7.917 0 1 0 7.917 7.917A7.94 7.94 0 0 0 41.958 0zm3.959 8.576h-3.299v3.299h-1.32V8.576H38v-1.32h3.299V3.959h1.32v3.299h3.298v1.32z" fill="#2A7BFF" fill-rule="nonzero"></path></g></svg>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="text-primary" id="imageName">Upload image</p>
+                                                <p class="info">Recommended size: 240x240
+                                                    </p>
+                                                <p class="info">JPG, PNG, GIF. Max size: 1MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <input type="file" class="image-file form-control" id="image"
+                                        aria-describedby="inputGroupPrepend3" required>
+                                    <div class="invalid-feedback d-block">
+                                        Please choose a different image.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary float-right" type="submit">
+                                    Next: Details
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+
+
+                                </button>
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
                 <div class="col-lg-6 col-sm-12 align-self-center preview">
@@ -71,7 +143,7 @@
                                 <div class="section-round__perticipent-text">
                                     <h4>
                                         McCullough and Sons
-                                        
+
 
                                         <!---->
                                     </h4>
@@ -95,11 +167,10 @@
                                                 www.sayazin.com
                                             </span>
                                         </a></div>
-                                </div> 
+                                </div>
                                 <span class="section-round__perticipent-vote">
                                     <a href="#">
-                                        <svg width="1em"
-                                            height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
                                                 d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
@@ -170,7 +241,10 @@
         </div>
     </footer>
 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="custom.jquery.js"></script>
 </body>
 
 </html>

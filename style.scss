@@ -26,7 +26,9 @@ body {
     font-size: 12px;
     margin-top: 2px;
 }
-
+.header{
+    background: #F3F3F3;
+}
 .main {
     margin-top: 30px;
     padding-bottom: 50px;
@@ -54,7 +56,7 @@ body {
             height: 43px;
             color: #F14C00;
             display: block;
-            z-index: 9999;
+            z-index: 100;
             text-align: center;
             border: 1px solid #e8e8e8;
             border-radius: 50%;
@@ -437,7 +439,7 @@ body {
                 height: 37px;
                 color: #F14C00;
                 display: block;
-                z-index: 9999;
+                z-index: 1;
                 text-align: center;
                 border: 1px solid #e8e8e8;
                 border-radius: 50%;
@@ -452,3 +454,116 @@ body {
         }
     }
 }
+
+/** Register page **/
+.form-info{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.register-form{
+    padding: 20px;
+    background: #fff;
+
+    .input-counter{
+        position: relative;
+        &__text {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        }
+    }
+}
+.image-upload{
+    position: relative;
+    .image-box{
+        
+        border: 1px dashed #e8e8e8;
+        padding: 5px 10px;
+        &:hover{
+            cursor: pointer;
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 13px;
+
+        }
+        .info{
+            color: #6f6f6f;
+        }
+        .image{
+            margin-top: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+            svg{
+                display: flex;
+                &:hover{
+                    cursor: pointer !important;
+                }
+            }
+        }
+        
+    }
+    input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 69px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 999;
+        &:hover{
+            cursor: pointer !important;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+   .header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    .logo{
+        img{
+            max-width: 170px;
+        }
+    }
+   }
+    
+    .mobileMenu {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    width: 40%;
+    height: 100vh;
+      margin: auto;
+      left: 0;
+      -webkit-transition: all ease 0.25s;
+      transition: all ease 0.25s;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        li:hover{
+            background: #F9F9F9;
+        }
+        
+        
+    }
+    .mobileMenu.open {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    .mobileMenu .navbar-nav {
+      overflow-y: auto;
+    }
+    
+  }
+
+
+
