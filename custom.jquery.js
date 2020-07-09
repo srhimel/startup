@@ -72,12 +72,12 @@ function countChar(val) {
     $('.image-file').change(function(e){
       var fileName = e.target.files[0].name;
       $("#imageName").html(fileName);
-      $(".image-box").css("border-color", "#F14C00");
+      $(".image-box").css("border-color", "rgb(41, 158, 255)");
     });
 
 
     $('#cover').change(function(e){
-      $(".cover-border").css("border-color", "#F14C00");
+      $(".cover-border").css("border-color", "rgb(41, 158, 255)");
       var fileName = e.target.files[0].name;
       $("#fill-title").html(fileName);
       

@@ -168,6 +168,14 @@
                                 </div>
 
                             </div>
+                            <!--
+
+                                This two fields are conditional field.
+                                Only one of this field is fillable
+
+                            -->
+
+                            <!-- Youtube field if choose yes -->
                             <div class="col-md-12" id="youtubeField">
                                 <label for="youtube" class="form-label">Youtube Video Link</label>
                                 <input type="text" class="form-control" id="youtube"
@@ -176,6 +184,7 @@
                                     Not a valid youtube url
                                 </div> -->
                             </div>
+                            <!-- Cover Image field if choose yes -->
                             <div class="col-md-12 sr-only" id="coverField">
                                 <label for="cover" class="form-label">Upload Cover Image</label> 
                                 <div class="file-box">
@@ -186,7 +195,7 @@
                                             <path
                                                 d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z">
                                             </path>
-                                        </svg> <span id="fill-title">Select Cover Image</span></label>
+                                        </svg> <span id="fill-title">Choose a Cover Image</span></label>
                                         <label for=""><small>Recommended Image Ratio: 16:9 </small></label>
                                     </div>
                                 <!-- <div class="invalid-feedback d-block">
@@ -207,6 +216,23 @@
                                 <div class="invalid-feedback">
 
                                 </div>
+                            </div>
+
+                            <!-- Payment Field - Remove this field when there is no paid tournament enabled -->
+                            <div class="col-md-12" id="paymentField">
+                                <label for="paymeny" class="form-label">Want to join the tournament instantly?</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input checked class="form-check-input" type="radio" name="payment"
+                                        id="noPay" value="free" >
+                                    <label class="form-check-label" for="inlineRadio1">No (Free)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="payment"
+                                        id="yesPay" value="paid" >
+                                    <label class="form-check-label" for="inlineRadio2">Yes (Paid)</label>
+                                </div>
+                                
                             </div>
 
                             <div class="col-12">
