@@ -10,53 +10,87 @@
 
 <body>
     <header class="header">
-        <div class="my-container text-center">
-            <div class="logo m-2">
-                <a href="#"><img src="images/logo.png" alt="League of Startups"></a>
-            </div>
+
+        <div class="header-desktop d-none d-lg-block">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="League of Startups"></a>
+                    <button class="navbar-toggler align-self-start" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu"
+                        id="navbarSupportedContent">
+                        <h5 style="margin-left: 23%;">Tournament For Startups</h5>
+                        <ul class="navbar-nav align-self-stretch ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <a style="width: 180px !important; margin-left: 20px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
+
+
+                </div>
+            </nav>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
-            <div class="container position-relative">
-    
-                <button class="navbar-toggler align-self-start" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu" id="navbarSupportedContent">
-                    <ul class="navbar-nav align-self-stretch">
-                        <li class="nav-item">
-                            <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Archive</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Grand Archive</a>
-                        </li>
-                    </ul>
-    
+        <div class="header-mobile d-lg-none d-md-block d-sm-block">
+            <div class="my-container text-center">
+                <div class="logo m-2">
+                    <a href="#"><img src="images/logo.png" alt="League of Startups"></a>
                 </div>
-                <a style="width: 160px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
-    
-    
             </div>
-        </nav>
-        
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
+                <div class="container position-relative">
+
+                    <button class="navbar-toggler align-self-start" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav align-self-stretch">
+                            <li class="nav-item">
+                                <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Archive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grand Archive</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <a style="width: 160px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
+
+
+                </div>
+            </nav>
+        </div>
+
     </header>
 
-    <section class="main">
+    <section class="main" id="home">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-sm-12">
+                <div class="col-lg-8 col-sm-12 order-sm-1 order-sm-0">
                     <div class="header-title align-middle d-flex justify-content-between">
                         <div class="left-part">
-                            <h2 class="heading mt-3">Season 1 - Tournament 1/16</h2>
-                            
-                            <!-- <nav>
+                            <h2 class="heading ">Season 1 - Tournament 1/16</h2>
+
+                            <nav>
                                 
                                 <ul class="pagination">
                                     <li class="round"> <span>Round of: </span></li>
@@ -70,7 +104,7 @@
                                     <li class="page-item  disabled"><a href="http://127.0.0.1:8000/round/4"
                                             class="page-link">Finals</a></li>
                                 </ul>
-                            </nav> -->
+                            </nav>
                         </div>
 
                         <div class="timer">
@@ -97,10 +131,10 @@
                                 <div class="section-round__perticipent-text">
                                     <h4>
                                         <a href="/startup.html">
-                                        McCullough and Sons 
+                                            McCullough and Sons
                                         </a>
                                         <span class="badge bg-success rounded-pill">Winner</span>
-                                        
+
                                         <!---->
                                     </h4>
                                     <p>
@@ -137,9 +171,12 @@
                                 <span class="section-round__vs-text">
                                     VS
                                 </span>
+                                <div class="arrow"></div>
+
+                                <div class="arrow"></div>
                             </div>
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
@@ -148,7 +185,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
@@ -196,7 +233,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         I wonder?' As she said this, she noticed that one of the officers of the birds
@@ -232,9 +269,11 @@
                                 <span class="section-round__vs-text">
                                     VS
                                 </span>
+                                <div class="arrow"></div>
+                                <div class="arrow"></div>
                             </div>
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
@@ -243,7 +282,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
@@ -290,7 +329,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         I wonder?' As she said this, she noticed that one of the officers of the birds
@@ -326,19 +365,20 @@
                                 <span class="section-round__vs-text">
                                     VS
                                 </span>
+                                <div class="arrow"></div>
                             </div>
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
                                             alt="Image"></a></div>
                                 <div class="section-round__perticipent-text">
                                     <h4>
-                                        
+
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
@@ -385,7 +425,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         I wonder?' As she said this, she noticed that one of the officers of the birds
@@ -421,9 +461,10 @@
                                 <span class="section-round__vs-text">
                                     VS
                                 </span>
+                                <div class="arrow"></div>
                             </div>
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
@@ -432,7 +473,7 @@
                                     <h4>
                                         <a href="#">
                                             McCullough and Sons
-                                            </a>
+                                        </a>
                                     </h4>
                                     <p>
                                         Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
@@ -471,11 +512,11 @@
 
                     <div class="bottom-pagination d-flex justify-content-center">
                         <nav class="mt-4">
-                                
+
                             <ul class="pagination">
                                 <li class="round"> <span>Round of: </span></li>
-                                <li class="page-item  "><a href="http://127.0.0.1:8000/round/1"
-                                        class="page-link">16</a></li>
+                                <li class="page-item  "><a href="http://127.0.0.1:8000/round/1" class="page-link">16</a>
+                                </li>
                                 <li class="page-item active "><a href="http://127.0.0.1:8000/round/2"
                                         class="page-link">8</a></li>
                                 <li aria-current="page" class="page-item  disabled"><a
@@ -488,34 +529,14 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 order-lg-0 order-sm-1">
                     <!-- Widget Item-->
-                    <!-- Subscriber Widget-->
-                    <div class="widget widget-subscribe">
-                        <span class="widget-title">
-
-                        </span>
-
-                        <div class="widget-body">
-                            <div class="subscribe">
-                                <h4>Subscribe to our newsletter</h4>
-                                <p>Want to get update? Sign up to receive the round by round update.</p>
-                                <span class="info">We're diligent and don't spam.</span>
-
-                                <form action="">
-                                    <input type="text" class="form-control" placeholder="Your Email Address">
-                                    <div class="p-1"></div>
-                                    <button type="submit" class="btn text-uppercase btn-sm btn-primary rounded-0 form-control">subscribe </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Widget Item-->
+                    
                     <!-- Champion List Widget-->
                     <div class="widget">
                         <span class="widget-title">
 
-                            Champion List
+                            The Coming Grand Championship
 
                         </span>
 
@@ -604,6 +625,30 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Widget Item-->
+                    <!-- Subscriber Widget-->
+                    
+                    <div class="widget widget-subscribe">
+                        <span class="widget-title">
+
+                        </span>
+
+                        <div class="widget-body">
+                            <div class="subscribe">
+                                
+
+                                <form action="">
+                                    <input type="text" class="form-control" placeholder="Your Email Address">
+                                    <div class="p-1"></div>
+                                    <button type="submit"
+                                        class="btn btn-sm btn-primary rounded-0 form-control">Send Me Tournament Update
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -613,49 +658,55 @@
     <footer>
         <div class="pt-4 pb-3 footer">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-4 col-xs-12 location">
-                    <h4  class="mt-2">Contact Us</h4>
-                    <span class="footer-bar"></span>
-                    <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-                    <p class="mb-0"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
-                    </svg> &nbsp; (541) 754-3010</p>
-                    <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                      </svg> &nbsp; info@hsdf.com</p>
-                </div>
-                <div class="col-lg-1 col-xs-12"></div>
-                <div class="col-lg-3 col-xs-12 links">
-                  <h4  class="mt-2">Useful Links</h4>
-                  <span class="footer-bar"></span>
-                    <ul class="m-0 p-0">
-                      <li>- <a href="#">About Us</a></li>
-                      <li>- <a href="#">Archive</a></li>
-                      <li>- <a href="#">Grand Archive</a></li>
-                      <li>- <a href="#">Others</a></li>
-                    </ul>
-                </div>
-                
-
-                <div class="col-lg-4 col-xs-12 about-company">
-                    <h4 class="mt-2">Subscribe to our newsletter</h4>
-                    <span class="footer-bar"></span>
-                    <p class="pr-5 text-white-50">Want to get update? Sign up to receive the round by round update. </p>
-                    
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="button-addon2">
-                      <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h4 class="mt-2">Contact Us</h4>
+                        <span class="footer-bar"></span>
+                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                        <p class="mb-0"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                            </svg> &nbsp; (541) 754-3010</p>
+                        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg> &nbsp; info@hsdf.com</p>
                     </div>
-                  </div>
-              </div>
-              <div class="row mt-5">
-                <div class="col copyright">
-                  <p class=""><small class="text-white-50">© 2020. All Rights Reserved.</small></p>
+                    <div class="col-lg-1 col-xs-12"></div>
+                    <div class="col-lg-3 col-xs-12 links">
+                        <h4 class="mt-2">Useful Links</h4>
+                        <span class="footer-bar"></span>
+                        <ul class="m-0 p-0">
+                            <li>- <a href="#">About Us</a></li>
+                            <li>- <a href="#">Archive</a></li>
+                            <li>- <a href="#">Grand Archive</a></li>
+                            <li>- <a href="#">Others</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-4 col-xs-12 about-company">
+                        <h4 class="mt-2">Subscribe to our newsletter</h4>
+                        <span class="footer-bar"></span>
+                        <p class="pr-5 text-white-50">Want to get update? Sign up to receive the round by round update.
+                        </p>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your Email Address"
+                                aria-label="Your Email Address" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">© 2020. All Rights Reserved.</small></p>
+                    </div>
+                </div>
             </div>
-            </div>
+        </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -10,45 +10,79 @@
 
 <body>
     <header class="header">
-        <div class="my-container text-center">
-            <div class="logo m-2">
-                <a href="#"><img src="images/logo.png" alt="League of Startups"></a>
-            </div>
+
+        <div class="header-desktop d-none d-lg-block">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="League of Startups"></a>
+                    <button class="navbar-toggler align-self-start" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu"
+                        id="navbarSupportedContent">
+                        <h5 style="margin-left: 23%;">Tournament For Startups</h5>
+                        <ul class="navbar-nav align-self-stretch ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <a style="width: 180px !important; margin-left: 20px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
+
+
+                </div>
+            </nav>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
-            <div class="container position-relative">
-    
-                <button class="navbar-toggler align-self-start" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu" id="navbarSupportedContent">
-                    <ul class="navbar-nav align-self-stretch">
-                        <li class="nav-item">
-                            <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Archive</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Grand Archive</a>
-                        </li>
-                    </ul>
-    
+        <div class="header-mobile d-lg-none d-md-block d-sm-block">
+            <div class="my-container text-center">
+                <div class="logo m-2">
+                    <a href="#"><img src="images/logo.png" alt="League of Startups"></a>
                 </div>
-                <a style="width: 160px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
-    
-    
             </div>
-        </nav>
-        
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm justify-content-sm-start">
+                <div class="container position-relative">
+
+                    <button class="navbar-toggler align-self-start" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row  mobileMenu"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav align-self-stretch">
+                            <li class="nav-item">
+                                <a class="nav-link active pl-0" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Archive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Grand Archive</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <a style="width: 160px;" href="/register-startup.html" class="btn btn-primary"> Submit Startup</a>
+
+
+                </div>
+            </nav>
+        </div>
+
     </header>
 
-    <section class="main">
+    <section id="archive" class="main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-12">
@@ -57,23 +91,12 @@
 
                     <div class="header-title align-middle d-flex justify-content-between">
                         <div class="left-part">
-                            <h2 class="heading mt-3">Season 1 - Tournament 2</h2>
+                            <h2 class="heading">Season 1 - Tournament 2</h2>
+                        </div>
+                        <div class="right-part">
+                            <a href="/archive-single.html">View Full Tournament 
                             
-                            <!-- <nav>
-                                
-                                <ul class="pagination">
-                                    <li class="round"> <span>Round of: </span></li>
-                                    <li class="page-item  "><a href="http://127.0.0.1:8000/round/1"
-                                            class="page-link">16</a></li>
-                                    <li class="page-item active "><a href="http://127.0.0.1:8000/round/2"
-                                            class="page-link">8</a></li>
-                                    <li aria-current="page" class="page-item  disabled"><a
-                                            href="http://127.0.0.1:8000/round/3" class="page-link">4 <span
-                                                class="sr-only">(current)</span></a></li>
-                                    <li class="page-item  disabled"><a href="http://127.0.0.1:8000/round/4"
-                                            class="page-link">Finals</a></li>
-                                </ul>
-                            </nav> -->
+                            </a>
                         </div>
 
                     </div>
@@ -128,7 +151,7 @@
 
                             
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
@@ -171,246 +194,7 @@
 
 
 
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
+                            
                         </div>
 
 
@@ -423,23 +207,10 @@
 
                     <div class="header-title align-middle d-flex justify-content-between">
                         <div class="left-part">
-                            <h2 class="heading mt-3">Season 1 - Tournament 1</h2>
-                            
-                            <!-- <nav>
-                                
-                                <ul class="pagination">
-                                    <li class="round"> <span>Round of: </span></li>
-                                    <li class="page-item  "><a href="http://127.0.0.1:8000/round/1"
-                                            class="page-link">16</a></li>
-                                    <li class="page-item active "><a href="http://127.0.0.1:8000/round/2"
-                                            class="page-link">8</a></li>
-                                    <li aria-current="page" class="page-item  disabled"><a
-                                            href="http://127.0.0.1:8000/round/3" class="page-link">4 <span
-                                                class="sr-only">(current)</span></a></li>
-                                    <li class="page-item  disabled"><a href="http://127.0.0.1:8000/round/4"
-                                            class="page-link">Finals</a></li>
-                                </ul>
-                            </nav> -->
+                            <h2 class="heading">Season 1 - Tournament 2</h2>
+                        </div>
+                        <div class="right-part">
+                            <a href="/archive-single.html">View Full Tournament</a>
                         </div>
 
                     </div>
@@ -493,252 +264,9 @@
                             </div>
 
                             
+                            
                             <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-
-
-
-
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
-                                <div class="section-round__perticipent-image"><a target="_blank"
-                                        href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
-                                            src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
-                                            alt="Image"></a></div>
-                                <div class="section-round__perticipent-text">
-                                    <h4>
-                                        <a href="#">
-                                            McCullough and Sons
-                                            </a>
-                                    </h4>
-                                    <p>
-                                        Her first idea was that it is!' 'Why should it?' muttered the Hatter. 'You might
-                                        just as usual. 'Come, there's half my plan done now! How.
-                                    </p>
-                                    <div><a href="#" class="btn btn-sm btn-light border">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-link-45deg"
-                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                                <path
-                                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z" />
-                                                <path
-                                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
-                                                <path
-                                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z" />
-                                            </svg>
-                                            <span>
-                                                www.sayazin.com
-                                            </span>
-                                        </a></div>
-                                </div> <span class="section-round__perticipent-vote  vote-active"><a href="#">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-triangle-fill"
-                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
-                                        </svg> <br>1
-                                    </a></span>
-                            </div>
-                            <!-- Second Perticipent -->
-                            <div class="d-flex bd-highlight p-3 pt-4 section-round__perticipent-1">
+                            <div class="d-flex bd-highlight section-round__perticipent-1">
                                 <div class="section-round__perticipent-image"><a target="_blank"
                                         href="http://gibson.com/eius-velit-error-minus-perspiciatis-quae-consequatur-autem"><img
                                             src="https://res.cloudinary.com/dihtl8bum/image/upload/v1563376051/images/ut7qgvjfepbbt3k2pg3k_wus1yf.jpg"
@@ -805,32 +333,12 @@
                 </div>
                 <div class="col-lg-4 col-sm-12">
                     <!-- Widget Item-->
-                    <!-- Subscriber Widget-->
-                    <div class="widget widget-subscribe">
-                        <span class="widget-title">
-
-                        </span>
-
-                        <div class="widget-body">
-                            <div class="subscribe">
-                                <h4>Subscribe to our newsletter</h4>
-                                <p>Want to get update? Sign up to receive the round by round update.</p>
-                                <span class="info">We're diligent and don't spam.</span>
-
-                                <form action="">
-                                    <input type="text" class="form-control" placeholder="Your Email Address">
-                                    <div class="p-1"></div>
-                                    <button type="submit" class="btn text-uppercase btn-sm btn-primary rounded-0 form-control">subscribe </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Widget Item-->
+                    
                     <!-- Champion List Widget-->
                     <div class="widget">
                         <span class="widget-title">
 
-                            Champion List
+                            The Coming Grand Championship
 
                         </span>
 
@@ -919,6 +427,30 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Widget Item-->
+                    <!-- Subscriber Widget-->
+                    
+                    <div class="widget widget-subscribe">
+                        <span class="widget-title">
+
+                        </span>
+
+                        <div class="widget-body">
+                            <div class="subscribe">
+                                
+
+                                <form action="">
+                                    <input type="text" class="form-control" placeholder="Your Email Address">
+                                    <div class="p-1"></div>
+                                    <button type="submit"
+                                        class="btn btn-sm btn-primary rounded-0 form-control">Send Me Tournament Update
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

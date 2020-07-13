@@ -10309,8 +10309,90 @@ body {
   background: #F3F3F3;
 }
 
+#home .arrow {
+  border: solid #F14C00;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 50px;
+  position: absolute;
+  left: 101%;
+  -webkit-transform: rotate(-45deg) translateY(-75%);
+          transform: rotate(-45deg) translateY(-75%);
+}
+
+#archive .header-title:not(:first-child) {
+  margin-top: 20px;
+}
+
+#archive .header-title a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#archive .header-title a:hover {
+  text-decoration: underline;
+}
+
+.header-desktop .navbar-brand img {
+  max-width: 192px;
+  position: absolute;
+  top: -10px;
+  background: #F8F9FA;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.header-desktop .navbar-brand::after {
+  content: " ";
+  display: block;
+  clear: both;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  height: 32px;
+  width: 192px;
+  background: transparent;
+  position: absolute;
+  top: 45px;
+  border-radius: 4px;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.hero-info h2, .hero-info .h2 {
+  font-size: 30px;
+}
+
+.hero-info .hero-border {
+  width: 50px;
+  height: 3px;
+  margin: 15px 0;
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.hero-info p {
+  font-size: 20px;
+  color: #606f7b;
+  margin-bottom: 25px;
+}
+
+.hero-info .btn-outline-primary {
+  border-width: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.hero-info .btn-primary {
+  border-width: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .main {
@@ -10459,31 +10541,33 @@ body {
 
 .main .section-round__perticipent-vote {
   position: absolute;
-  right: 30px;
+  right: 17px;
   top: 50%;
   background: #fff;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center;
   border: 1px solid #e8e8e8;
-  display: table;
-  max-width: 40px;
+  display: block;
   border-radius: 4px;
+  width: 50px;
 }
 
 .main .section-round__perticipent-vote a {
   text-align: center;
-  display: table;
-  padding: 1rem 1.2rem;
+  display: block;
+  padding: 15px 0;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   color: #000;
   line-height: 1;
   text-decoration: none;
+  font-size: 13px;
 }
 
 .main .section-round__perticipent-vote svg {
   max-width: 10px;
+  margin-bottom: 5px;
 }
 
 .main .section-round__perticipent-vote:hover {
@@ -10702,7 +10786,29 @@ body {
   padding-bottom: 20px;
 }
 
+@media (max-width: 430px) {
+  .header-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .timer {
+    text-align: center;
+  }
+}
+
 @media (max-width: 769px) {
+  #home .arrow {
+    border: solid #F14C00;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    left: 101%;
+    -webkit-transform: rotate(-45deg) translateY(-75%);
+            transform: rotate(-45deg) translateY(-75%);
+  }
   .section-round__perticipent-text {
     padding-right: 2.5rem !important;
   }
@@ -10780,7 +10886,11 @@ input[type=number]:focus,
   color: #6f6f6f;
 }
 
-.register-form input[type=email], .register-form input[type=text], .register-form select, .register-form textarea, .register-form input[type=url] {
+.register-form input[type=email],
+.register-form input[type=text],
+.register-form select,
+.register-form textarea,
+.register-form input[type=url] {
   border-radius: 3px;
   border: 1px solid #e8e8e8;
   -webkit-box-sizing: border-box;
@@ -10790,11 +10900,14 @@ input[type=number]:focus,
   padding: 10px;
 }
 
-.register-form input[type=email], .register-form input[type=text], .register-form input[type=url] {
+.register-form input[type=email],
+.register-form input[type=text],
+.register-form input[type=url] {
   height: 35px;
 }
 
-.register-form .input-counter input, .register-form .input-counter textarea {
+.register-form .input-counter input,
+.register-form .input-counter textarea {
   padding-right: 45px;
 }
 
@@ -10911,7 +11024,46 @@ input[type=number]:focus,
   cursor: pointer !important;
 }
 
+@media (max-width: 376px) {
+  .btn-outline-primary {
+    margin-right: 0 !important;
+    display: block;
+    width: 100%;
+  }
+  .btn-primary {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+  }
+  .header-mobile .btn-primary {
+    margin-top: 0 !important;
+  }
+}
+
 @media (max-width: 992px) {
+  .hero-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hero-info h2, .hero-info .h2 {
+    font-size: 24px;
+  }
+  .hero-info p {
+    font-size: 16px;
+  }
+  .hero-info .btn {
+    font-size: 14px;
+  }
+  .hero-border {
+    display: none;
+  }
+  .hero-image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 70%;
+    margin: auto;
+  }
   .header {
     position: -webkit-sticky;
     position: sticky;
@@ -10963,6 +11115,13 @@ button[type="submit"] {
 }
 
 @media (min-width: 992px) {
+  .subscribe h4, .subscribe .h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .main {
+    margin-top: 50px;
+  }
   .thankyou {
     margin-top: 80px;
     margin-bottom: 100px;
